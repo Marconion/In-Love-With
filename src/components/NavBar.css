@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   background-color: #333;
   color: #fff;
 }
@@ -21,5 +21,40 @@ ul {
 .nav-links {
   display: flex;
   gap: 1rem;
-  color: #feccdb;
+  color: #f3ded1;
+}
+
+/* .nav-links:hover {
+  color: #f3ded1;
+} */
+
+li {
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 5px;
+  font-size: 13px;
+}
+
+li:hover {
+  position: relative;
+}
+
+li:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #f3ded1;
+  left: 0;
+  bottom: -2px;
+  animation: underline 0.3s ease-in-out forwards;
+}
+
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }

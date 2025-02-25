@@ -24,13 +24,8 @@
   width: 100%;
   will-change: filter;
   transition: filter 300ms;
-  box-shadow: #feccdb 0 0 1em;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  background-color: #be9f8e;
+  box-shadow: #be9f8e 0 0 1em;
 }
 
 @keyframes logo-spin {
@@ -54,12 +49,13 @@
 
 .read-the-docs {
   color: #888;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .desc {
   color: #888;
-  font-size: 12px;
+  font-size: 14px;
+  font-style: italic;
 
   margin: 10px 0;
   padding: 0 30px;
