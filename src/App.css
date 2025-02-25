@@ -5,11 +5,26 @@
   text-align: center;
 }
 
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
 .logo {
   width: 100%;
   will-change: filter;
   transition: filter 300ms;
-  box-shadow: #feccdb 0 0 2em;
+  box-shadow: #feccdb 0 0 1em;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
